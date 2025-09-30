@@ -402,14 +402,15 @@ button {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     max-width: 1440px;
     margin: 0 auto;
-    
+
 }
-     @media screen and (min-resolution: 2x) {
-        .hero {
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-                url('../images/office/office-mobile-2x.jpg');
-        }
+
+@media screen and (min-resolution: 2x) {
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url('../images/office/office-mobile-2x.jpg');
     }
+}
 
 
 
@@ -464,6 +465,7 @@ button {
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
             url('../images/office/office-tablet-1x.jpg');
     }
+
     @media screen and (min-width: 768px) and (min-resolution: 2x) {
         .hero {
             background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -496,6 +498,7 @@ button {
                 url('../images/office/office-desctop-2x.jpg');
         }
     }
+
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
@@ -576,7 +579,7 @@ button {
         margin: auto;
     }
 
-    h3 .section-title {
+    .section-title {
         text-align: left;
     }
 }
@@ -667,6 +670,7 @@ button {
     background-color: var(--light-color);
 }
 
+
 .team-hero {
     text-align: center;
     margin-bottom: 72px;
@@ -687,9 +691,7 @@ button {
     margin-bottom: 72px;
 }
 
-.team-decor {
-    width: 100%;
-}
+
 
 .team-info {
     padding: 32px 0;
@@ -762,7 +764,9 @@ button {
         column-gap: 24px;
         row-gap: 64px;
     }
-
+    .team-container {
+        max-width: 584px;
+    }
     .team-item {
         width: calc((100% - 24px) / 2);
     }
@@ -771,7 +775,7 @@ button {
         margin: 0;
     }
 
-    
+
     .team-title {
         font-size: 24px;
         line-height: 1.16667;
@@ -780,6 +784,10 @@ button {
 }
 
 @media screen and (min-width: 1158px) {
+
+    .team-container {
+        max-width: 1158px;
+    }
     .team-section {
         padding-top: 120px;
         padding-bottom: 120px;
@@ -994,9 +1002,11 @@ button {
     gap: 80px;
     width: 208px;
 }
+
 .social-wrapper {
     margin-bottom: 72px;
 }
+
 .social-heading {
     font-weight: 500;
     font-size: 16px;
@@ -1044,6 +1054,7 @@ button {
 .subscription-wrapper {
     margin-bottom: 72px;
 }
+
 .subscription-heading {
     font-weight: 500;
     font-size: 16px;
@@ -1128,12 +1139,11 @@ button {
         justify-content: flex-start;
         gap: 72px 24px;
         flex-wrap: wrap;
+        max-width: 584px;
     }
 
     .footer-description {
-        margin: 0;
-        flex: 0 0 264px;
-        max-width: 264px;
+        margin-bottom: unset;
     }
 
     .footer-text {
@@ -1165,10 +1175,7 @@ button {
     }
 
     .subscription-wrapper {
-        display: flex;
-        flex-direction: column;
-        flex: 1 1 auto;
-        min-width: 453px;
+        margin-bottom: unset;
     }
 
     .subscription-heading {
@@ -1201,7 +1208,7 @@ button {
         flex-shrink: 0;
     }
 
-   
+
 }
 
 @media screen and (min-width: 1158px) {
@@ -1211,7 +1218,8 @@ button {
     }
 
     .footer-container {
-        gap: 80px;
+        max-width: 1158px;
+        justify-content: space-between;
         flex-wrap: nowrap;
     }
 
@@ -1412,6 +1420,7 @@ button {
     display: flex;
     display: inline-flex;
 }
+
 .visually-hidden:checked+.custom-checkbox-label .privacy-policy-link {
     background-color: #404bbf;
     border: none;
@@ -1440,6 +1449,7 @@ button {
     letter-spacing: 0.04em;
     color: #8e8f99;
 }
+
 .privacy-policy-link {
     color: #4d5ae5;
     text-decoration: underline;
@@ -1479,9 +1489,11 @@ button {
         width: 408px;
         min-height: 584px;
     }
+
     .modal-checkbox {
         max-width: 360px;
-        }
+    }
+
     .custom-checkbox-label {
         align-items: center;
         gap: 8px;
@@ -1491,6 +1503,7 @@ button {
     .checkbox-icon {
         justify-content: center;
     }
+
     .privacy-policy-link {
         display: inline;
     }
