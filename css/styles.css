@@ -664,6 +664,11 @@ button {
 /*our team*/
 
 /* our team */
+
+.team-container {
+    max-width: 296px;
+}
+
 .team-section {
     padding-top: 96px;
     padding-bottom: 96px;
