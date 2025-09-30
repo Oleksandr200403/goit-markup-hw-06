@@ -1416,16 +1416,6 @@ button {
     margin-bottom: 24px;
     max-width: 256px;
 }
-
-.custom-checkbox-label {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
-    color: var(--text-secondary);
-    display: flex;
-    display: inline-flex;
-}
-
 /* .visually-hidden:checked+.custom-checkbox-label .privacy-policy-link {
     background-color: #404bbf;
     border: none;
@@ -1436,6 +1426,15 @@ button {
     background-color: var(--primary-hover-color);
     border: none;
     fill: var(--light-color);
+}
+
+.custom-checkbox-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: var(--text-secondary);
+    align-items: center;
+    gap: 8px;
 }
 
 .checkbox-svg {
