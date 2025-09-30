@@ -184,7 +184,7 @@ button {
 
     .contacts-link {
         display: block;
-        font-size: 16px;
+        font-size: 12px;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: var(--text-color);
@@ -284,8 +284,6 @@ button {
     display: flex;
     flex-direction: column;
     gap: 40px;
-    padding-top: 24px;
-    padding-bottom: 168px;
 }
 
 .mobile-nav-link {
@@ -309,6 +307,7 @@ button {
 
 .mobile-contacts {
     margin-bottom: 48px;
+    font-style: normal;
 }
 
 .mobile-contacts-list {
@@ -334,10 +333,6 @@ button {
 .mobile-contacts-link:hover,
 .mobile-contacts-link:focus {
     color: var(--primary-hover-color);
-}
-
-.mobile-socials {
-    margin-top: auto;
 }
 
 .mobile-socials .social-list {
@@ -400,14 +395,25 @@ button {
     padding-top: 72px;
     padding-bottom: 72px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url('../images/office-1.jpg');
+        url('../images/office/office-mobile-1x.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     max-width: 1440px;
     margin: 0 auto;
+    
 }
+     @media screen and (min-resolution: 2x) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url('../images/office/office-mobile-2x.jpg');
+        }
+    }
+
+
+
+
 
 .hero-section {
     display: flex;
@@ -455,7 +461,18 @@ button {
         max-width: 768px;
         padding-top: 120px;
         padding-bottom: 120px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+            url('../images/office/office-tablet-1x.jpg');
     }
+    @media screen and (min-width: 768px) and (min-resolution: 2x) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url('../images/office/office-tablet-2x.jpg');
+        }
+    }
+
+
+
 
     .hero-title {
         font-size: 56px;
@@ -470,8 +487,15 @@ button {
     .hero {
         max-width: 1440px;
         padding: 188px 0;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/office/office-desctop-1x.jpg');
     }
 
+    @media screen and (min-width: 1158px) and (min-resolution: 2x) {
+        .hero {
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+                url('../images/office/office-desctop-2x.jpg');
+        }
+    }
     .hero-title {
         font-size: 56px;
         line-height: 1.07;
@@ -488,7 +512,17 @@ button {
     }
 }
 
+
+
+
+
 /*Our Features*/
+
+
+
+.features-section {
+    padding: 96px 0;
+}
 
 .visually-hidden {
     position: absolute;
@@ -503,16 +537,12 @@ button {
     overflow: hidden;
 }
 
-.features-section {
-    padding: 96px 0;
-}
-
-.section-item:not(:last-child) {
-    margin-bottom: 72px;
-}
-
 .section-icon {
     display: none;
+}
+
+.section-item {
+    margin-bottom: 72px;
 }
 
 .section-title {
@@ -543,7 +573,11 @@ button {
 
     .section-item {
         width: calc((100% - 24px) / 2);
-        margin: 0;
+        margin: auto;
+    }
+
+    h3 .section-title {
+        text-align: left;
     }
 }
 
@@ -646,8 +680,6 @@ button {
 
 .team-item {
     background-color: #FFFFFF;
-    width: 100%;
-    padding: 0px 0px 32px 0px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
@@ -656,8 +688,11 @@ button {
 }
 
 .team-decor {
-    margin-bottom: 32px;
     width: 100%;
+}
+
+.team-info {
+    padding: 32px 0;
 }
 
 .team-title {
@@ -718,7 +753,6 @@ button {
 
     .team-hero {
         font-weight: 500;
-        font-size: 20px;
         line-height: 1.2;
     }
 
@@ -737,6 +771,7 @@ button {
         margin: 0;
     }
 
+    
     .team-title {
         font-size: 24px;
         line-height: 1.16667;
@@ -911,12 +946,9 @@ button {
 }
 
 .footer-description {
-    margin: 0 auto;
-}
-
-.footer-text {
     margin-bottom: 72px;
 }
+
 
 .logo-link {
     display: block;
@@ -962,7 +994,9 @@ button {
     gap: 80px;
     width: 208px;
 }
-
+.social-wrapper {
+    margin-bottom: 72px;
+}
 .social-heading {
     font-weight: 500;
     font-size: 16px;
@@ -978,7 +1012,6 @@ button {
     gap: 16px;
     padding: 0;
     justify-content: center;
-    margin-bottom: 72px;
 }
 
 .footer .social-item {
@@ -1008,6 +1041,9 @@ button {
 
 /* ========= Footer Subscribe Form ========= */
 
+.subscription-wrapper {
+    margin-bottom: 72px;
+}
 .subscription-heading {
     font-weight: 500;
     font-size: 16px;
@@ -1090,7 +1126,7 @@ button {
         flex-direction: row;
         align-items: flex-start;
         justify-content: flex-start;
-        gap: 72px;
+        gap: 72px 24px;
         flex-wrap: wrap;
     }
 
