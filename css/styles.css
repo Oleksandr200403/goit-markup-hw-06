@@ -958,9 +958,9 @@ button {
     justify-content: center;
 }
 
-/* .footer-description {
+.footer-description {
     margin-bottom: 72px;
-} */
+}
 
 
 .logo-link {
@@ -1006,10 +1006,6 @@ button {
     align-items: baseline;
     gap: 80px;
     width: 208px;
-}
-
-.social-wrapper {
-    margin-bottom: 72px;
 }
 
 .social-heading {
@@ -1433,8 +1429,8 @@ button {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--text-secondary);
+    display: flex;
     align-items: center;
-    gap: 8px;
 }
 
 .checkbox-svg {
@@ -1472,7 +1468,7 @@ button {
 .privacy-policy-link {
     color: #4d5ae5;
     text-decoration: underline;
-    display: block;
+
 }
 
 .modal-button {
